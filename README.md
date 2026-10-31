@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in espresso, sand and rose: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. A dark rice in desert pinks;
-crimson is kept for what is wrong.
+crimson is kept for what is wrong. The dark half of a pair;
+the light half is [cosmic-blush-theme](https://github.com/atraxsrc/cosmic-blush-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-cd7f8b?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ae9b84?style=for-the-badge)
@@ -40,6 +41,14 @@ Every text colour is at least 4.5:1 on the window background.
 | Muted | ![#858079](https://placehold.co/12x12/858079/858079.png) Secondary text | ![#858079](https://placehold.co/12x12/858079/858079.png) `#858079` |
 | Dim | ![#66615a](https://placehold.co/12x12/66615a/66615a.png) Comments | ![#66615A](https://placehold.co/12x12/66615a/66615a.png) `#66615A` |
 | Lines | ![#54504c](https://placehold.co/12x12/54504c/54504c.png) Box lines, inactive | ![#54504C](https://placehold.co/12x12/54504c/54504c.png) `#54504C` |
+
+| Role | Blush Night | Blush |
+|------|---|---|
+| Background | ![#17130E](https://placehold.co/12x12/17130e/17130e.png) `#17130E` | ![#F5E6D3](https://placehold.co/12x12/f5e6d3/f5e6d3.png) `#F5E6D3` |
+| Text | ![#DACCBC](https://placehold.co/12x12/daccbc/daccbc.png) `#DACCBC` | ![#35302A](https://placehold.co/12x12/35302a/35302a.png) `#35302A` |
+| Accent | ![#CD7F8B](https://placehold.co/12x12/cd7f8b/cd7f8b.png) `#CD7F8B` | ![#9E4F5B](https://placehold.co/12x12/9e4f5b/9e4f5b.png) `#9E4F5B` |
+| Success | ![#AE9B84](https://placehold.co/12x12/ae9b84/ae9b84.png) `#AE9B84` | ![#76634C](https://placehold.co/12x12/76634c/76634c.png) `#76634C` |
+| Error | ![#E8735E](https://placehold.co/12x12/e8735e/e8735e.png) `#E8735E` | ![#A02B16](https://placehold.co/12x12/a02b16/a02b16.png) `#A02B16` |
 
 The accent is rose, 6.2:1 on the background and 5.3:1 on a container,
 so it stays the same colour wherever it is text; buttons and selections
@@ -96,7 +105,7 @@ carry it with espresso text on top.
 │   ├── cosmic-blushnight.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Blush Night
+│   ├── themes/                  # Cursor / VS Code colour themes, Blush Night (dark) + Blush (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -134,6 +143,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Blush.ron` from
+[cosmic-blush-theme](https://github.com/atraxsrc/cosmic-blush-theme) into the
+Light slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
 
@@ -225,9 +239,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-blush.jsonc` carries the Blush Night palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/BlushNight.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-blush.jsonc` is one theme with both halves:
+Blush Night in dark mode and Blush in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -237,13 +252,18 @@ button text 4.5:1, accents 3:1).
 It copies the file into `~/.config/Claude/themes.d/`. Then press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-blush**.
 
+The same file ships in [`cosmic-blush-theme`](https://github.com/atraxsrc/cosmic-blush-theme),
+so installing from either repo gives the same theme.
+
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Blush Night**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Blush Night** and **Cosmic Blush**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-blush-theme. Code is coloured the way Neovim is
+in the rice; the workbench is
 espresso with umber menus, hovers and inputs, rose on the active tab, buttons
 and menu highlight, and the integrated terminal uses the COSMIC Terminal
 scheme. Cursor builds its Agent and chat panels from the same theme colours,
@@ -256,8 +276,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Blush Night**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Blush Night**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Blush and Blush Night; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -285,6 +306,9 @@ background is plain espresso; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Blush, the light half, ships its
+own theme.
 
 ---
 
@@ -525,11 +549,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Dark tab → Import `cosmic-term/BlushNight-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-blush`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-blush`, Appearance → Dark
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Blush Night. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Blush Night ↔ [Blush](https://github.com/atraxsrc/cosmic-blush-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Blush Night is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the cosmic-blushnight theme for Claude Desktop (the unofficial
+# Install the cosmic-blush theme for Claude Desktop (the unofficial
 # claude-desktop-extra Linux build) into its themes.d drop-in folder.
 # Backs up a different existing copy. Never deletes.
 set -euo pipefail
@@ -24,4 +24,4 @@ fi
 
 echo
 echo "Done. In Claude Desktop press Ctrl+Shift+T and pick cosmic-blush."
-echo "Blush Night is light only; Settings -> Appearance changes nothing."
+echo "Blush Night is the dark half; Settings -> Appearance -> Light shows Blush."
