@@ -1,0 +1,39 @@
+{
+  "name": "cosmic-blushnight-theme",
+  "displayName": "Cosmic Blush Night",
+  "description": "Dark colour theme from the COSMIC Blush Night rice, syntax as in its Neovim scheme.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#17130E",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-blushnight-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "light",
+    "cosmic",
+    "blushnight",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Blush Night",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-blushnight-color-theme.json"
+      }
+    ]
+  }
+}
