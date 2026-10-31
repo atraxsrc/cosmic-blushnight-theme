@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Blush Night",
+  "version": "1.0",
+  "description": "Espresso theme from the COSMIC Blush Night rice: mocha icons, one rose accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{60e0fbff-6e7e-5bbe-b306-b2d561c52458}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#25211D",
+      "toolbar_text": "#daccbc",
+      "frame": "#17130E",
+      "tab_background_text": "#ae9b84",
+      "tab_text": "#cd7f8b",
+      "toolbar_field": "#3f3b36",
+      "toolbar_field_text": "#daccbc",
+      "toolbar_field_border_focus": "#CD7F8B",
+      "toolbar_field_highlight": "#CD7F8B",
+      "toolbar_field_highlight_text": "#17130E",
+      "tab_line": "#CD7F8B",
+      "popup": "#25211D",
+      "popup_text": "#daccbc",
+      "button_background_active": "#CD7F8B",
+      "button_background_hover": "#3f3b36",
+      "frame_inactive": "#17130E",
+      "icons_attention": "#CD7F8B",
+      "icons": "#ae9b84",
+      "ntp_background": "#17130E",
+      "ntp_text": "#daccbc",
+      "popup_border": "#9A958E",
+      "popup_highlight_text": "#17130E",
+      "popup_highlight": "#CD7F8B",
+      "sidebar_border": "#3f3b36",
+      "sidebar_highlight_text": "#17130E",
+      "sidebar_highlight": "#CD7F8B",
+      "sidebar_text": "#daccbc",
+      "tab_loading": "#CD7F8B"
+    }
+  }
+}

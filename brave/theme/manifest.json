@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Blush Night",
+  "version": "1.0",
+  "description": "Espresso theme from the COSMIC Blush Night rice: mocha icons, one rose accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [23, 19, 14],
+      "frame_inactive": [23, 19, 14],
+      "frame_incognito": [23, 19, 14],
+      "frame_incognito_inactive": [23, 19, 14],
+      "background_tab": [23, 19, 14],
+      "background_tab_inactive": [23, 19, 14],
+      "background_tab_incognito": [23, 19, 14],
+      "background_tab_incognito_inactive": [23, 19, 14],
+      "toolbar": [37, 33, 29],
+      "tab_text": [205, 127, 139],
+      "tab_background_text": [174, 155, 132],
+      "tab_background_text_inactive": [174, 155, 132],
+      "tab_background_text_incognito": [174, 155, 132],
+      "tab_background_text_incognito_inactive": [174, 155, 132],
+      "bookmark_text": [218, 204, 188],
+      "toolbar_button_icon": [174, 155, 132],
+      "omnibox_background": [63, 59, 54],
+      "omnibox_text": [218, 204, 188],
+      "ntp_background": [23, 19, 14],
+      "ntp_text": [218, 204, 188],
+      "ntp_link": [205, 127, 139]
+    }
+  }
+}
