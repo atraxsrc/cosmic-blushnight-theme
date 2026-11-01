@@ -13,6 +13,7 @@ the light half is [cosmic-blush-theme](https://github.com/atraxsrc/cosmic-blush-
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-ae9b84?style=for-the-badge)
 ![Blush Night](https://img.shields.io/badge/Theme-BlushNight-17130e?style=for-the-badge&labelColor=cd7f8b)
 ![Firefox](https://img.shields.io/badge/Firefox-BlushNight-cd7f8b?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-cd7f8b?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-858079?style=for-the-badge)
 
 </div>
