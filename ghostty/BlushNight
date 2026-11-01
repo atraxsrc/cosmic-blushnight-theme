@@ -1,0 +1,45 @@
+# BlushNight for Ghostty, part of cosmic-blushnight-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = BlushNight
+# or, with the Blush half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:BlushNight,light:Blush
+
+background = #17130E
+foreground = #DACCBC
+
+cursor-color = #CD7F8B
+cursor-text = #17130E
+
+selection-background = #3F3B36
+selection-foreground = #DACCBC
+
+split-divider-color = #66615A
+unfocused-split-fill = #17130E
+
+# black
+palette = 0=#312D28
+palette = 8=#66615A
+# red
+palette = 1=#E8735E
+palette = 9=#E98E7E
+# green
+palette = 2=#AE9B84
+palette = 10=#AA9B88
+# yellow
+palette = 3=#B09282
+palette = 11=#B89F92
+# blue
+palette = 4=#CD7F8B
+palette = 12=#D5909A
+# magenta
+palette = 5=#D48F5E
+palette = 13=#C8926B
+# cyan
+palette = 6=#BC85A2
+palette = 14=#CD7F83
+# white
+palette = 7=#C1B6AC
+palette = 15=#E4D6C6
