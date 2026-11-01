@@ -450,7 +450,7 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers ship in [`backgrounds/`](backgrounds/), named `blushnight-<subject>`, the same pictures as Blush:
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `blushnight-<subject>`, the same pictures as Blush, darkened into Blush Night's espresso key:
 six scenes in pink and espresso: dunes under a peach sky, a paisley swirl,
 balloons over a meadow at sunset, a lone blossom tree in snow, a blossom
 branch on pink and a pink garden with arches, plus the anime portrait
