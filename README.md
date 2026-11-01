@@ -136,7 +136,7 @@ carry it with espresso text on top.
 │   ├── BlushNight.conf          # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -516,8 +516,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.blushnight]` and used by name: the directory in ![#9A958E](https://placehold.co/12x12/9a958e/9a958e.png) `#9A958E`,
 the branch in ![#B09282](https://placehold.co/12x12/b09282/b09282.png) `#B09282`, ![#D48F5E](https://placehold.co/12x12/d48f5e/d48f5e.png) `#D48F5E` for a dirty tree, a ![#AE9B84](https://placehold.co/12x12/ae9b84/ae9b84.png) `#AE9B84` prompt
-character that turns ![#E8735E](https://placehold.co/12x12/e8735e/e8735e.png) `#E8735E` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#E8735E](https://placehold.co/12x12/e8735e/e8735e.png) `#E8735E` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/blushnight.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
