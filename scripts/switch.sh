@@ -10,7 +10,7 @@ SLUG="blushnight"                         # zsh/<slug>.zsh, nvim/lua/plugins/<sl
 MODE="dark"                        # the COSMIC half this rice fills: dark or light
 RON="BlushNight.ron"                      # desktop theme in cosmic/
 TERM_RON="BlushNight-term.ron"            # terminal scheme in cosmic-term/
-BTOP="Blush Night"                         # btop/<name>.theme
+BTOP="BlushNight"                         # btop/<name>.theme
 
 usage() {
     cat <<EOF
